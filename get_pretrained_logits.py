@@ -55,8 +55,8 @@ def tokenize_function(examples, text, paired, second_text):
 def encode_empath(df, text_col, lexicon):
     rows = []
     for i in tqdm(range(df.shape[0])):
-        cat_counts = lexicon.analyze(df[args.text][i], categories=hk_categories)
-        sentences = nltk.sent_tokenize(df[args.text][i])
+        cat_counts = lexicon.analyze(df[text_col][i], categories=hk_categories)
+        sentences = nltk.sent_tokenize(df[text_col][i])
         cat_counts['numtexts'] = len(sentences)
         rows.append(cat_counts)
 

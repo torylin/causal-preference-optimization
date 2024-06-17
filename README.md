@@ -5,4 +5,4 @@
 
 ## Usage
  
-To run the methods we introduce in the paper---CPO, DR-CPO, and OO-RLHF---please clone this repository and use the template found in `run_template.sh`.
+To run the methods we introduce in the paper—CPO, DR-CPO, and OO-RLHF—please clone this repository and use the template found in `run_template.sh`.
